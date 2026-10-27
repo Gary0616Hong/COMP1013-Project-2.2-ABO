@@ -1,0 +1,6 @@
+stage,seconds
+Image embedding extraction,20.024485111236572
+Text embedding extraction,5.047278881072998
+Image baseline training,8.825674533843994
+Text baseline training,3.4991791248321533
+Feature-fusion MLP training,4.080620050430298

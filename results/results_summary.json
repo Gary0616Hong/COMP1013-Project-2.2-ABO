@@ -1,0 +1,70 @@
+{
+  "seed": 42,
+  "device": "cuda",
+  "metadata_rows": 147702,
+  "usable_rows": 147127,
+  "usable_percentage": 99.61070263097318,
+  "usable_product_types": 573,
+  "selected_classes": [
+    "BOOT",
+    "CELLULAR_PHONE_CASE",
+    "CHAIR",
+    "FINERING",
+    "GROCERY",
+    "HOME",
+    "HOME_BED_AND_BATH",
+    "HOME_FURNITURE_AND_DECOR",
+    "SANDAL",
+    "SHOES"
+  ],
+  "final_balanced_n": 2500,
+  "train_n": 1750,
+  "val_n": 375,
+  "test_n": 375,
+  "best_late_fusion_image_weight": 0.6000000000000001,
+  "best_late_fusion_text_weight": 0.3999999999999999,
+  "results": [
+    {
+      "model": "Feature fusion",
+      "accuracy": 0.904,
+      "macro_f1": 0.9033569499805487,
+      "weighted_f1": 0.9035562172848394
+    },
+    {
+      "model": "Image only",
+      "accuracy": 0.8613333333333333,
+      "macro_f1": 0.8580406968287019,
+      "weighted_f1": 0.8585794718886336
+    },
+    {
+      "model": "Late fusion",
+      "accuracy": 0.8613333333333333,
+      "macro_f1": 0.8578530089233045,
+      "weighted_f1": 0.8584129637917957
+    },
+    {
+      "model": "Text only",
+      "accuracy": 0.8133333333333334,
+      "macro_f1": 0.8143364616342603,
+      "weighted_f1": 0.8146596101730424
+    }
+  ],
+  "overfitting": {
+    "feature_fusion_train_macro_f1": 0.9988571428571429,
+    "feature_fusion_test_macro_f1": 0.9033569499805487,
+    "train_test_gap": 0.09550019287659417,
+    "best_validation_macro_f1": 0.9093155267365794
+  },
+  "timing_seconds": {
+    "Image embedding extraction": 20.024485111236572,
+    "Text embedding extraction": 5.047278881072998,
+    "Image baseline training": 8.825674533843994,
+    "Text baseline training": 3.4991791248321533,
+    "Feature-fusion MLP training": 4.080620050430298
+  },
+  "software": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "cuda_available": true
+  }
+}
